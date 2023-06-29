@@ -1,0 +1,223 @@
+// Images product
+.container.single_product_container
+    .row
+        .col
+            // Breadcrumbs
+            .breadcrumbs.d-flex.flex-row.align-items-center
+                ul
+                    li
+                        a(href='index.html') Trang Chủ
+                    li
+                        a(href='categories.html')
+                            i.fa.fa-angle-right(aria-hidden='true')
+                            | Nam
+                    li.active
+                        a(href='#')
+                            i.fa.fa-angle-right(aria-hidden='true')
+                            | Chi tiết sản phẩm
+    .row
+        .col-lg-7
+            .single_product_pics
+                .row
+                    .col-lg-3.thumbnails_col.order-lg-1.order-2
+                        .single_product_thumbnails
+                            ul
+                                li.active
+                                    img(src='images/single_3_thumb.jpg' alt='' data-image='images/single_3.jpg')
+                                li
+                                    img(src='images/single_3_thumb.jpg' alt='' data-image='images/single_3.jpg')
+                                li
+                                    img(src='images/single_3_thumb.jpg' alt='' data-image='images/single_3.jpg')
+                    .col-lg-9.image_col.order-lg-2.order-1
+                        .single_product_image
+                            .single_product_image_background(style='background-image:url(images/single_3.jpg)')
+        .col-lg-5
+            .product_details
+                .product_details_title
+                    h2 Áo carigan
+                    p
+                        | Mô tả...
+                .free_delivery.d-flex.flex-row.align-items-center.justify-content-center
+                    span 
+                        i.fa-solid.fa-truck
+                    span Miễn phí giao hàng
+                .original_price $629.99
+                .product_price $495.00
+                .product_color
+                    span Chọn màu
+                    ul
+                        li(style='background: #cec36f')
+                        //- li(style='background: #252525')
+                        //- li(style='background: #60b3f3')
+                .quantity.d-flex.flex-column.flex-sm-row.align-items-sm-center
+                    span Số lượng:
+                    .quantity_selector
+                        span.minus
+                            i.fa.fa-minus(aria-hidden='true')
+                        span#quantity_value 1
+                        span.plus
+                            i.fa.fa-plus(aria-hidden='true')
+                    .red_button.add_cart_button
+                        a(href='#') Thêm vào giỏ
+// Tabs
+.tabs_section_container
+    .container
+        .row
+            .col
+                .tabs_container
+                    ul.tabs.d-flex.flex-sm-row.flex-column.align-items-left.align-items-md-center.justify-content-center
+                        li.tab.active(data-active-tab='tab_1')
+                            span Mô tả
+                        li.tab(data-active-tab='tab_2')
+                            span Kích cỡ
+                        li.tab(data-active-tab='tab_3')
+                            span Đánh giá (2)
+        .row
+            .col
+                // Tab Description
+                #tab_1.tab_container.active
+                    .row
+                        .col-lg-5.desc_col
+                            .tab_title
+                                h4 Mô tả
+                            .tab_text_block
+                                h2 Áo khoác carigan
+                                p
+                                    | Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...
+                            .tab_image
+                                img(src='images/desc_1.jpg' alt='')
+                            .tab_text_block
+                                h2 Áo khoác carigan
+                                p
+                                    | Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...
+                        .col-lg-5.offset-lg-2.desc_col
+                            .tab_image
+                                img(src='images/desc_2.jpg' alt='')
+                            .tab_text_block
+                                h2 Áo khoác carigan
+                                p
+                                    | Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...
+                            .tab_image.desc_last
+                                img(src='images/desc_3.jpg' alt='')
+                // Tab Additional Info
+                #tab_2.tab_container
+                    .row
+                        .col.additional_info_col
+                            .tab_title.additional_info_title
+                                h4 Mô tả kích cỡ
+                            p
+                                | COLOR:
+                                span Gold, Red
+                            p
+                                | SIZE:
+                                span L,M,XL
+                // Tab Reviews
+                #tab_3.tab_container
+                    .row
+                        // User Reviews
+                        .col-lg-6.reviews_col
+                            .tab_title.reviews_title
+                                h4 Đánh giá (2)
+                            // User Review
+                            .user_review_container.d-flex.flex-column.flex-sm-row
+                                .user
+                                    .user_pic
+                                    .user_rating
+                                        ul.star_rating
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star-o(aria-hidden='true')
+                                .review
+                                    .review_date 27 Aug 2016
+                                    .user_name Nguyễn Văn A
+                                    p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            // User Review
+                            .user_review_container.d-flex.flex-column.flex-sm-row
+                                .user
+                                    .user_pic
+                                    .user_rating
+                                        ul.star_rating
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star(aria-hidden='true')
+                                            li
+                                                i.fa.fa-star-o(aria-hidden='true')
+                                .review
+                                    .review_date 27 Aug 2016
+                                    .user_name Nguyễn Văn B
+                                    p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        // Add Review
+                        .col-lg-6.add_review_col
+                            .add_review
+                                form#review_form(action='post')
+                                    div
+                                        h1 Thêm đánh giá
+                                        input#review_name.form_input.input_name(type='text' name='name' placeholder='Name*' required='required' data-error='Name is required.')
+                                        input#review_email.form_input.input_email(type='email' name='email' placeholder='Email*' required='required' data-error='Valid email is required.')
+                                    div
+                                        h1 Đánh giá của bạn:
+                                        textarea#review_message.input_review(name='message' placeholder='Your Review' rows='4' required='' data-error='Please, leave us a review.')
+                                    .text-left.text-sm-right
+                                        button#review_submit.red_button.review_submit_btn.trans_300(type='submit' value='Submit') Gửi
+.new_arrivals
+    .container
+        .row
+            .col.text-center
+                .section_title.new_arrivals_title
+                    h2 Sản phẩm liên quan
+        .row
+            .col
+                .product-grid(data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }')
+                    .row
+                        .col
+                            .product-grid(data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }')
+                                // Product 1
+                                a(href='details.html')
+                                    .col-lg-12.product-item.men
+                                        .product.discount.product_filter
+                                            .product_image
+                                                img(src='images/product_1.png' alt='')
+                                            .favorite.favorite_left
+                                            .product_bubble.product_bubble_right.product_bubble_red.d-flex.flex-column.align-items-center
+                                                span -$20
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html') Áo hoodie nam nữ...
+                                                .product_price
+                                                    | $520.00
+                                                    span $590.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 2
+                                a(href='details.html')
+                                    .col-lg-12.product-item.men
+                                        .product.discount.product_filter
+                                            .product_image
+                                                img(src='images/product_1.png' alt='')
+                                            .favorite.favorite_left
+                                            .product_bubble.product_bubble_right.product_bubble_red.d-flex.flex-column.align-items-center
+                                                span -$20
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='single.html')   Áo hoodie nam nữ...
+                                                .product_price
+                                                    | $520.00
+                                                    span $590.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+
+// End images product

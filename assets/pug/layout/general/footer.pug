@@ -1,0 +1,70 @@
+// footer
+// Newsletter
+.newsletter
+    .container
+        .row
+            .col-lg-6
+                .newsletter_text.d-flex.flex-column.justify-content-center.align-items-lg-start.align-items-md-center.text-center
+                    h4 Đăng ký
+                    p Đăng ký để nhận thông báo mới nhất về sản phẩm
+            .col-lg-6
+                form(action='post')
+                    .newsletter_form.d-flex.flex-md-row.flex-column.flex-xs-column.align-items-center.justify-content-lg-end.justify-content-center
+                        input#newsletter_email(type='email' placeholder='Your email' required='required' data-error='Valid email is required.')
+                        button#newsletter_submit.newsletter_submit_btn.trans_300(type='submit' value='Submit') Đăng ký
+// Footer
+.footer-clean
+    footer
+        .container
+            .row.justify-content-center
+                .col-sm-3.col-md-3.item
+                    h3 V&#x1EC1; ch&uacute;ng t&ocirc;i
+                    ul
+                        li
+                            a(href='index.html') Trang Ch&#x1EE7;
+                        li
+                            a(href='product.html') S&#x1EA3;n Ph&#x1EA9;m
+                        li
+                            a(href='sale.html') Gi&#x1EA3;m Gi&aacute;
+                        li
+                            a(href='contact.html') Li&ecirc;n H&#x1EC7;
+                .col-sm-3.col-md-3.item
+                    h3 Trung t&acirc;m tr&#x1EE3; gi&uacute;p
+                    ul
+                        li
+                            a(href='') H&#x1B0;&#x1EDB;ng d&#x1EAB;n mua h&agrave;ng
+                        li
+                            a(href='') H&#x1B0;&#x1EDB;ng d&#x1EAB;n ch&#x1ECD;n size
+                        li
+                            a(href='') Ch&iacute;nh s&aacute;ch B&#x1EA3;o h&agrave;nh &amp; &Dstrok;&#x1ED5;i tr&#x1EA3;
+                        li
+                            a(href='') Ch&iacute;nh s&aacute;ch v&#x1EAD;n chuy&#x1EC3;n
+                        li
+                            a(href='') Ch&iacute;nh s&aacute;ch b&#x1EA3;o m&#x1EAD;t
+                        li
+                            a(href='') C&acirc;u h&#x1ECF;i th&#x1B0;&#x1EDD;ng g&#x1EB7;p
+                .col-sm-3.col-md-2.item
+                    h3 Hotline
+                    ul
+                        li
+                            a(href='') 0983.998.788
+                        //
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                .col-lg-3.item.social
+                    a(href='#')
+                        i.fa-brands.fa-facebook
+                    a(href='#')
+                        i.fa-brands.fa-square-instagram
+                    a(href='#')
+                        i.fa-brands.fa-tiktok
+                    a(href='#')
+                        i.fa-solid.fa-envelope
+                    p.copyright
+                        | Company 
+                        span MT
+                        |  &copy; 2023
+
+
+// end footer
++render_link_js(data_page)

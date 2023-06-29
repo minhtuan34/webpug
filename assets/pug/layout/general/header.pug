@@ -1,0 +1,73 @@
+// header
+// Header
+header.header.trans_300
+    // Top Navigation
+    .top_nav
+        .container
+            .row
+                .col-md-6
+                    .top_nav_left 
+                        ul.top_nav_menu
+                            li.email
+                                a(href='#' title='email')
+                                    i.fa-solid.fa-envelope
+                                    |   phammihtuan0304@gmail.com
+                .col-md-6.text-right
+                    .top_nav_right
+                        ul.top_nav_menu
+                            li.account
+                                a(href='#' title='tra cứu')
+                                    i.fa-solid.fa-truck
+                                    |   Tra cứu đơn hàng
+                            li.account
+                                a(href='#' title='điện thoại')
+                                    i.fa-solid.fa-phone
+                                    |   +84 562 309 138
+    // Main Navigation
+    .main_nav_container
+        .container
+            .row
+                .col-lg-12.text-right
+                    .logo_container
+                        a(href='#')
+                            | MT
+                            span shop
+                    nav.navbar
+                        ul.navbar_menu
+                            li
+                                a(href='index.html') Trang Chủ
+                            li
+                                a(href='product.html')   Sản Phẩm
+                            li
+                                a(href='sale.html') Giảm Giá
+                            li
+                                a(href='contact.html') Liên Hệ
+                        ul.navbar_user
+                            li
+                                .search-container
+                                    form(action='/action_page.php')
+                                        input.input-search(type='text' placeholder='Tìm kiếm...' name='search')
+                                        button.input-btn(type='submit')
+                                            i.fa-sharp.fa-solid.fa-magnifying-glass
+                            li.icon-user
+                                a(href='#')
+                                    i.fa.fa-user(aria-hidden='true')
+                                ul.dropdown-content
+                                    li
+                                        a(href='#' title='Đăng nhập')
+                                            i.fa.fa-user-plus(aria-hidden='true')
+                                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&Dstrok;&abreve;ng nh&#x1EAD;p
+                                    hr
+                                    li
+                                        a(href='#')
+                                            i.fa.fa-sign-in(aria-hidden='Đăng xuất')
+                                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&Dstrok;&abreve;ng xu&#x1EA5;t
+                            li.checkout
+                                a(href='#' title='giỏ hàng')
+                                    i.fa.fa-shopping-cart(aria-hidden='true')
+                                    span#checkout_items.checkout_items 2
+                        .hamburger_container
+                            i.fa.fa-bars(aria-hidden='true')
+
+
+// end header

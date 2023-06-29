@@ -1,0 +1,425 @@
+//Product
+.container.product_section_container
+    .row
+        .col.product_section.clearfix
+            // Breadcrumbs
+            .breadcrumbs.d-flex.flex-row.align-items-center
+                ul
+                    li
+                        a(href='index.html') Trang Chủ
+                    li.active
+                        a(href='product.html')
+                            i.fa.fa-angle-right(aria-hidden='true')
+                            | Sản phẩm
+            // Sidebar
+            .sidebar
+                // Price Range Filtering
+                .sidebar_section
+                    .sidebar_title
+                        h5 Lọc theo giá
+                    p
+                        input#thanhkeo(type='text' readonly='' style='border:0; color:#f6931f; font-weight:bold;')
+                    #keoso
+                    .filter_button
+                        span Xác nhận
+                .sidebar_section
+                    .sidebar_title
+                        h5 Danh mục
+                    ul.sidebar_categories
+                        li.active
+                            a(href='#')
+                                span
+                                    i.fa.fa-angle-double-right(aria-hidden='true')
+                                | Tất cả
+                        li
+                            a(href='#') Nam
+                        li
+                            a(href='#') Nữ
+                        li
+                            a(href='#') Phụ kiện
+                        li
+                            a(href='#') Giày
+                .sidebar_section
+                    .sidebar_title
+                        h5 Bộ sưu tập
+                    ul.sidebar_categories
+                        li.active
+                            a(href='#')
+                                span
+                                    i.fa.fa-angle-double-right(aria-hidden='true')
+                                | Tất cả
+                        li
+                            a(href='#') Đồ thu đông
+                        li
+                            a(href='#') Đồ mùa hè
+                        li
+                            a(href='#') Đồ bơi
+                        li
+                            a(href='#') Denin
+            // Main Content
+            .main_content
+                // Products
+                .products_iso
+                    .row
+                        .col
+                            // Product Sorting
+                            .product_sorting_container.product_sorting_container_top
+                                ul.product_sorting
+                                    li
+                                        span.type_sorting_text Sắp xếp
+                                        i.fa.fa-angle-down
+                                        ul.sorting_type
+                                            li.type_sorting_btn(data-isotope-option='{ "sortBy": "original-order" }')
+                                                span M&#x1EB7;c &dstrok;&#x1ECB;nh
+                                            li.type_sorting_btn(data-isotope-option='{ "sortBy": "price" }')
+                                                span
+                                                    | Theo giá
+                                            li.type_sorting_btn(data-isotope-option='{ "sortBy": "name" }')
+                                                span
+                                                    | Theo tên
+                                .pages.d-flex.flex-row.align-items-center
+                                    .page_current
+                                        span 1
+                                        ul.page_selection
+                                            li
+                                                a(href='#') 1
+                                            li
+                                                a(href='#') 2
+                                            li
+                                                a(href='#') 3
+                                    .page_total
+                                        span of
+                                        |  3
+                                    #next_page.page_next
+                                        a(href='#')
+                                            i.fa.fa-long-arrow-right(aria-hidden='true')
+                            // Product Grid
+                            .product-grid
+                                // Product 1
+                                a(href='details.html')
+                                    .product-item.men
+                                        .product.discount.product_filter
+                                            .product_image
+                                                img(src='images/product_1.png' alt='')
+                                            .favorite.favorite_left
+                                            .product_bubble.product_bubble_right.product_bubble_red.d-flex.flex-column.align-items-center
+                                                span -$20
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo hoodie màu nâu
+                                                .product_price
+                                                    | $520.00
+                                                    span $590.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 2
+                                a(href='details.html')
+                                    .product-item.women
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_2.png' alt='')
+                                            .favorite
+                                            .product_bubble.product_bubble_left.product_bubble_green.d-flex.flex-column.align-items-center
+                                                span new
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Túi thời trang nam nữ
+                                                .product_price $610.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 3
+                                a(href='details.html')
+                                    .product-item.women
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_3.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo len mùa đông
+                                                .product_price $120.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 4
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_4.png' alt='')
+                                            .product_bubble.product_bubble_right.product_bubble_red.d-flex.flex-column.align-items-center
+                                                span sale
+                                            .favorite.favorite_left
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Túi xách đi du lịch
+                                                .product_price $410.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 5
+                                a(href='details.html')
+                                    .product-item.women.men
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_5.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Giày thể thao nam
+                                                .product_price $180.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 6
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.discount.product_filter
+                                            .product_image
+                                                img(src='images/product_6.png' alt='')
+                                            .favorite.favorite_left
+                                            .product_bubble.product_bubble_right.product_bubble_red.d-flex.flex-column.align-items-center
+                                                span -$20
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Kính mát nam
+                                                .product_price
+                                                    | $520.00
+                                                    span $590.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 7
+                                a(href='details.html')
+                                    .product-item.women
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_7.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo len nữ
+                                                .product_price $610.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 8
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_8.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Ví da nam nữ thời trang
+                                                .product_price $120.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 9
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_9.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo carigan nam nữ
+                                                .product_price $450.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 10
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_10.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo thun nam
+                                                .product_price $200.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 11
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_5.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Giày thể thao
+                                                .product_price $480.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 12
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_6.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Kính râm
+                                                .product_price $120.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 13
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_4.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Túi xách thời trang
+                                                .product_price $400.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 14
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_7.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo len nam nữ
+                                                .product_price $600.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 15
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_1.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo hoodie
+                                                .product_price $480.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 16
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_2.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Túi xách thời trang
+                                                .product_price $120.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 17
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_4.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Túi xách đi du lịch
+                                                .product_price $500.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 18
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_3.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo len mùa đông
+                                                .product_price $420.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 19
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_10.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Áo thun nam dài tay
+                                                .product_price $320.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                                // Product 20
+                                a(href='details.html')
+                                    .product-item.accessories
+                                        .product.product_filter
+                                            .product_image
+                                                img(src='images/product_4.png' alt='')
+                                            .favorite
+                                            .product_info
+                                                h6.product_name
+                                                    a(href='details.html')
+                                                        |   Túi xách đi du lịch
+                                                .product_price $120.00
+                                        .red_button.add_to_cart_button
+                                            a(href='#') Thêm vào giỏ
+                            // Product Sorting
+                            .product_sorting_container.product_sorting_container_bottom.clearfix
+                                ul.product_sorting
+                                    li
+                                        span Show:
+                                        span.num_sorting_text 04
+                                        i.fa.fa-angle-down
+                                        ul.sorting_num
+                                            li.num_sorting_btn
+                                                span 02
+                                            li.num_sorting_btn
+                                                span 04
+                                            li.num_sorting_btn
+                                                span 06
+                                            li.num_sorting_btn
+                                                span 08
+                                            li.num_sorting_btn
+                                                span 10
+                                .pages.d-flex.flex-row.align-items-center
+                                    .page_current
+                                        span 1
+                                        ul.page_selection
+                                            li
+                                                a(href='#') 1
+                                            li
+                                                a(href='#') 2
+                                            li
+                                                a(href='#') 3
+                                    .page_total
+                                        span of
+                                        |  3
+                                    #next_page_1.page_next
+                                        a(href='#')
+                                            i.fa.fa-long-arrow-right(aria-hidden='true')
+
+//End product

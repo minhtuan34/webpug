@@ -1,0 +1,111 @@
+{
+  "general": {
+    "title_website": "MT Shop",
+    "description_website": "MT Shop",
+    "keywords_website": "MT Shop",
+    "url_favicon": "images/logo/logo.ico",
+    "url_website": "https://fastui.vercel.app/",
+    "created_website": "2022-10-11",
+    "position_website": "12.288247, 109.205426",
+    "placename_website": "Nha Trang, Khanh Hoa, Viet Nam",
+    "country_website": "VN",
+    "region_website": "VN-65",
+    "hreflang_website": "vi, en"
+  },
+  "header": {
+    "logo": "images/logo/logo.png",
+    "language": [
+      {
+        "url_img": "images/language/vi.jpg",
+        "title": "Việt Nam"
+      },
+      {
+        "url_img": "images/language/en.jpg",
+        "title": "English"
+      }
+    ],
+    "topnavigation": [
+      {
+        "title": "Tra cứu đơn hàng",
+        "link": "index.html"
+      },
+      {
+        "title": "Tài khoản",
+        "link": ""
+      }
+    ],
+    "menu": [
+      {
+        "title": "Trang chủ",
+        "link": "index.html"
+      },
+      {
+        "title": "Sản phẩm",
+        "link": "details.html"
+      },
+      {
+        "title": "Giảm giá",
+        "link": ""
+      }, 
+      {
+        "title": "Liên hệ",
+        "link": ""
+      }
+    ]
+  },
+
+  "content": {
+    "product": [
+      {
+        "title":"",
+        "data-filter": ""
+      },
+      {
+        "title": "",
+        "data-filter": ""
+      }
+    ]
+  },
+
+  "footer": {},
+  "page_home": {
+    "title_page": "Home",
+    "description_page": "Home",
+    "keywords_page": "Home",
+    "url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
+    "css": ["lib"],
+    "js": ["jquery-3.2.1.min", "popper", "bootstrap.min", "isotope.pkgd.min", "owl.carousel", "easing", "custom"]
+  },
+  "page_details": {
+    "title_page": "Chitiet",
+    "description_page": "Chitiet",
+    "keywords_page": "Chitiet",
+    "url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
+    "css": ["lib", "fonts"],
+    "js": ["jquery-3.2.1.min","popper", "bootstrap.min", "isotope.pkgd.min","owl.carousel","easing","jquery-ui", "productdetails"]
+  },
+  "page_product": {
+    "title_page": "Sanpham",
+    "description_page": "Sanpham",
+    "keywords_page": "Sanpham",
+    "url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
+    "css": ["lib", "fonts"],
+    "js": ["jquery-3.2.1.min","popper", "bootstrap.min", "isotope.pkgd.min", "owl.carousel","easing", "jquery-ui", "productcustom"]
+  },
+  "page_sale": {
+    "title_page": "Giamgia",
+    "description_page": "Giamgia",
+    "keywords_page": "Giamgia",
+    "url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
+    "css": ["lib", "fonts"],
+    "js": ["jquery-3.2.1.min","popper", "bootstrap.min", "isotope.pkgd.min", "owl.carousel","easing", "jquery-ui", "productcustom"]
+  },
+  "page_contact": {
+    "title_page": "Lienhe",
+    "description_page": "Lienhe",
+    "keywords_page": "Lienhe",
+    "url_image_page": "https://cdn.dribbble.com/userupload/3179612/file/original-0a3d69b15003b98826db6ee95e294627.png?compress=1&resize=1024x768",
+    "css": ["lib", "fonts"],
+    "js": ["jquery-3.2.1.min","popper", "bootstrap.min", "isotope.pkgd.min", "owl.carousel","easing", "jquery-ui", "productcustom"]
+  }
+}

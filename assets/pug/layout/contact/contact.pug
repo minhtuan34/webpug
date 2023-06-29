@@ -1,0 +1,68 @@
+//Contact
+.container.contact_container
+    .row
+        .col
+            // Breadcrumbs
+            .breadcrumbs.d-flex.flex-row.align-items-center
+                ul
+                    li
+                        a(href='index.html') Trang Ch&#x1EE7;
+                    li.active
+                        a(href='#')
+                            i.fa.fa-angle-right(aria-hidden='true')
+                            | Li&ecirc;n
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;H&#x1EC7;
+    // Map Container
+    .mapouter
+        .gmap_canvas
+            iframe#gmap_canvas(width='100%' height='100%' src='https://maps.google.com/maps?q=79 mai thị dõng&t=&z=10&ie=UTF8&iwloc=&output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
+            a(href='https://2yu.co')
+            br
+            style.
+                .mapouter{position:relative;text-align:right;height:100%;width:100%;}
+            a(href='https://embedgooglemap.2yu.co/')
+            style.
+                .gmap_canvas {overflow:hidden;background:none!important;height:610px;width:1190px;}
+
+    // Contact Us
+    .row
+        .col-lg-6.contact_col
+            .contact_contents
+                h1 Li&ecirc;n h&#x1EC7; v&#x1EDB;i ch&uacute;ng t&ocirc;i
+                p 79 MAI TH&#x1ECA; D&Otilde;NG, NHA TRANG, KH&Aacute;NH H&Ograve;A
+                div
+                    p (001) 345-6789
+                    p phammihtuancntt20dh1@tbd.edu.vn
+                div
+                    p Gi&#x1EDD; m&#x1EDF; c&#x1EE7;a: 8.00-21.00
+                    p Ng&agrave;y m&#x1EDF; c&#x1EED;a: T&#x1EA5;t c&#x1EA3; c&aacute;c ng&agrave;y
+            // Follow Us
+            .follow_us_contents
+                h1 Theo d&otilde;i ch&uacute;ng t&ocirc;i
+                ul.social.d-flex.flex-row
+                    li
+                        a(href='#' style='background-color: #3a61c9')
+                            i.fa-brands.fa-facebook
+                    li
+                        a(href='#' style='background-color: #41a1f6')
+                            i.fa-brands.fa-twitter
+                    li
+                        a(href='#' style='background-color: #fb4343')
+                            i.fa-brands.fa-google
+                    li
+                        a(href='#' style='background-color: #C13584')
+                            i.fa-brands.fa-instagram
+        .col-lg-6.get_in_touch_col
+            .get_in_touch_contents
+                h1 &Yacute; ki&#x1EBF;n kh&aacute;ch h&agrave;ng
+                p B&#x1EA1;n c&#x1EA7;n h&#x1ED7; tr&#x1EE3; g&igrave;? 
+                form(action='post')
+                    div
+                        input#input_name.form_input.input_name.input_ph(type='text' name='name' placeholder='Name' required='required' data-error='Name is required.')
+                        input#input_email.form_input.input_email.input_ph(type='email' name='email' placeholder='Email' required='required' data-error='Valid email is required.')
+                        input#input_website.form_input.input_website.input_ph(type='url' name='name' placeholder='Website' required='required' data-error='Name is required.')
+                        textarea#input_message.input_ph.input_message(name='message' placeholder='Message' rows='3' required='' data-error='Please, write us a message.')
+                    div
+                        button#review_submit.red_button.message_submit_btn.trans_300(type='submit' value='Submit') G&#x1EED;i
+
+//End Contact
